@@ -11,24 +11,166 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,300;0,400;0,600;1,600&display=swap"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bb82b9e7db.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-wd-black"">
-  <header class=" h-[400px] w-full flex flex-col justify-center items-center text-blue-200 gap-4 bg-hero-pattern
+  <header class=" h-[400px] w-full flex flex-col justify-center items-center text-primary gap-4 bg-hero-pattern
   bg-cover bg-center bg-no-repeat">
   <h1 class="text-5xl font-bold text-center">WEB DEVELOPMENT<br /> BOOTCAMP</h1>
   <h2 class="text-[32px]">My Photo Gallery</h2>
   </header>
 
-  <main>
-    <section></section>
-    <section></section>
-    <section></section>
+  <main class="px-8 flex flex-col">
+    <div class="w-full text-primary text-4xl font-semibold flex items-center gap-10 my-12
+    before:content-[''] before:h-px before:bg-primary before:grow
+    after:content-[''] after:h-px after:bg-primary after:grow">Features</div>
+    <section class="flex flex-col items-center justify-center gap-6 w-full text-white">
+      <div class="flex gap-6 w-full">
+        <img src="../assets/features/image-bootcamp-feature-1.png" alt="features-image-1">
+        <div class="flex flex-col gap-4 bg-wd-darkgrey p-6 grow">
+          <h3 class="text-2xl font-semibold">City Skyline</h3>
+          <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed euismod
+            diam. In pretium in odio at
+            pretium. Aenean in suscipit enim. Aliquam lacus nulla, dapibus a eleifend sed, gravida sit amet justo. Nulla
+            vel diam at orci semper mattis.</p>
+        </div>
+      </div>
+      <div class="flex flex-row-reverse gap-6 w-full">
+        <img src="../assets/features/image-bootcamp-feature-2.png" alt="features-image-2">
+        <div class="flex flex-col gap-4 bg-wd-darkgrey p-6 grow">
+          <h3 class="text-2xl font-semibold">Corporate Stockphoto</h3>
+          <p class="text-2xl font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed euismod
+            diam. In pretium in odio at
+            pretium. Aenean in suscipit enim. Aliquam lacus nulla, dapibus a eleifend sed, gravida sit amet justo. Nulla
+            vel diam at orci semper mattis.</p>
+        </div>
+    </section>
+
+
+    <div class="w-full text-primary text-4xl font-semibold flex items-center gap-10 my-12
+    before:content-[''] before:h-px before:bg-primary before:grow
+    after:content-[''] after:h-px after:bg-primary after:grow">My work</div>
+    <section class="flex flex-col items-center justify-center gap-6 w-full text-white">
+      <div class="w-full grid grid-cols-3 place-items-center gap-6">
+        <img src="../assets/grid/image-bootcamp-1.png" alt="grid image 1" class="w-full object-cover">
+        <img src="../assets/grid/image-bootcamp-2.png" alt="grid image 2" class="w-full object-cover">
+        <img src="../assets/grid/image-bootcamp-3.png" alt="grid image 3" class="w-full object-cover">
+        <img src="../assets/grid/image-bootcamp-4.png" alt="grid image 4" class="w-full object-cover">
+        <img src="../assets/grid/image-bootcamp-5.png" alt="grid image 5" class="w-full object-cover">
+        <img src="../assets/grid/image-bootcamp-6.png" alt="grid image 6" class="w-full object-cover">
+      </div>
+    </section>
+
+    <div class="w-full text-primary text-4xl font-semibold flex items-center gap-10 my-12
+    before:content-[''] before:h-px before:bg-primary before:grow
+    after:content-[''] after:h-px after:bg-primary after:grow">More photos</div>
+
+    <section class="flex flex-col items-center justify-center gap-6 w-full text-white">
+      <div class="w-full overflow-hidden relative">
+        <div class="w-full h-[400px]">
+          <img src="../assets/slider/slide1.jpg" alt="slide image 1" class="w-full h-full object-cover my-slides">
+          <img src="../assets/slider/slide2.jpg" alt="slide image 2" class="w-full h-full object-cover my-slides">
+          <img src="../assets/slider/slide3.jpg" alt="slide image 3" class="w-full h-full object-cover my-slides">
+          <img src="../assets/slider/slide4.jpg" alt="slide image 4" class="w-full h-full object-cover my-slides">
+        </div>
+        <a class="text-white absolute top-[50%] left-3 cursor-pointer" onclick="increaseSlideNumber(-1)">
+          <i class="fa-solid fa-chevron-left fa-2xl"></i>
+        </a>
+        <a class="text-white absolute top-[50%] right-3 cursor-pointer" onclick="increaseSlideNumber(1)">
+          <i class="fa-solid fa-chevron-right fa-2xl"></i>
+        </a>
+      </div>
+      <div class="flex justify-center items-center w-full gap-3 mt-6">
+        <div class="rounded-full bg-primary h-3 w-3 dot-nav cursor-pointer" onclick="showSlide(0)"></div>
+        <div class="rounded-full bg-primary h-3 w-3 dot-nav cursor-pointer" onclick="showSlide(1)"></div>
+        <div class="rounded-full bg-primary h-3 w-3 dot-nav cursor-pointer" onclick="showSlide(2)"></div>
+        <div class="rounded-full bg-primary h-3 w-3 dot-nav cursor-pointer" onclick="showSlide(3)"></div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <section></section>
-    <section></section>
+
+
+  <footer class="flex flex-col text-white w-full px-8">
+    <section class="flex justify-between">
+      <div class="flex flex-col gap-6 w-2/6">
+        <h3 class="font-bold text-[32px]">Warit Buranaprapong</h3>
+        <p class="">Hello! I'm Warit, a Mechanical Engineering graduate venturing into the world of web development.
+          Formerly a Design Engineer at IGCE, I'm currently immersed in learning HTML, CSS, and JavaScript to create
+          innovative web solutions. Join me on this coding adventure!
+          I’m available for hiring.
+        </p>
+        <form onsubmit="onSubmit(event)" class="flex flex-col gap-4">
+          <input type="email" name="email" placeholder="Enter your email" class="py-[14px] p-4 w-full text-wd-black">
+          <button type="submit" class=" bg-primary text-[#010101] px-[33px] py-3 w-1/2">Subscribe <i
+              class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+      <div class="flex flex-col gap-6 w-2/6">
+        <h3 class="font-bold text-[32px]">
+          Get in touch!
+        </h3>
+
+        <p class=""> Centric Ratchada-Sutisan, 1155/11, Din dang, Din dang, Bangkok 10400</p>
+        <p>E-mail: gunwarit7@gmail.com</p>
+        <div class="flex gap-4">
+          <i class="fa-brands fa-twitter text-wd-brand fa-2xl"></i>
+          <i class="fa-brands fa-facebook text-wd-brand fa-2xl"></i>
+          <i class="fa-brands fa-instagram text-wd-brand fa-2xl"></i>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="text-center text-white font-bold border-t-[1px] mt-12 pt-12 text-primary">© 2023, Jane Doe. All Rights
+        Reserved.</p>
+    </section>
   </footer>
+  <script>
+    function onSubmit(e) {
+      alert(
+        `You (${e.target.elements.email.value}) has been subscribed to mailing list`
+      );
+    }
+
+    let slideNumber = 0;
+    showSlide(slideNumber);
+
+    function increaseSlideNumber(n) {
+      slideNumber += n;
+      showSlide(slideNumber);
+    }
+
+    function showSlide(n) {
+      const imageSlides = document.getElementsByClassName("my-slides");
+      const dotNavs = document.getElementsByClassName("dot-nav");
+
+      if (n >= imageSlides.length) {
+        slideNumber = 0;
+      }
+      else if (n < 0) {
+        slideNumber = imageSlides.length - 1;
+      }
+      else {
+        slideNumber = n;
+      }
+
+      for (let i = 0; i < imageSlides.length; i++) {
+        imageSlides[i].style.display = "none";
+
+        dotNavs[i].classList.remove("bg-primary");
+        dotNavs[i].classList.add("border-primary");
+        dotNavs[i].classList.add("border-[1px]");
+      }
+      imageSlides[slideNumber].style.display = "block";
+
+      dotNavs[slideNumber].classList.add("bg-primary");
+      dotNavs[slideNumber].classList.remove("border-primary");
+      dotNavs[slideNumber].classList.remove("border-[1px]");
+    }
+
+  </script>
+
 </body>
 
 </html>

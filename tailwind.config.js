@@ -9,6 +9,7 @@ module.exports = {
         "wd-grey": "#999999",
         "wd-darkgrey": "#2D2D2D",
         "wd-black": "#080808",
+        "wd-brand": "#898989",
       },
       backgroundImage: {
         "hero-pattern":
