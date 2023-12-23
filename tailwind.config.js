@@ -15,7 +15,7 @@ module.exports = {
           "linear-gradient(to left, rgba(0,0,0, 0), rgba(0,0,0,1)), url('../assets/hero/hero.jpg')",
       },
       fontFamily: {
-        san: ['poppins', 'Arial', 'sans-serif']
+        sans: ["Poppins", "Arial", "sans-serif"]
       }
     },
   },
